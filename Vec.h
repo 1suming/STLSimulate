@@ -5,6 +5,9 @@
 
 using namespace std;
 /*
+主要参考<accelerated c++ by example>
+还可以参考：http://mathbox59.blog.163.com/blog/static/12845359920102325635884/
+
 我们的内存管理工作都用allocator类实现，为什么不用new和delete？
 因为new会完成相当多的工作，他不仅会分配内存空间，还会把这些内存初始化。当使用new来为T类型的数组分配空间时，
 他需要使用T的默认构造函数。这种方式使得我们不能为用户提供更多的灵活性。
